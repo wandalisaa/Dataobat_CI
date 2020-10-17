@@ -1,0 +1,401 @@
+body{
+    font-family: "Montserrat";
+}
+.thead{
+    background-color: #9ee37d;
+    color: #358600;
+}
+.card-data{
+    height: fit-content;
+    min-height: 500px;
+}
+.btn-circle {
+    border-radius: 4px;
+    border-radius: 25px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    height: fit-content;
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 5px;
+    min-width: 50px;
+    margin: 3px;
+    line-height: 45px;
+    padding: 0;
+    background-color: #63c132;
+    color: white !important;
+  }
+  
+  .btn-circle span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-circle span:after {
+    height: -webkit-fill-available;
+    content: 'Tambah obat';
+    margin-top: 1px;
+    font-size: medium;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -70px;
+    transition: 0.5s;
+  }
+  
+  .btn-circle:hover span {
+    padding-right: 120px;
+  }
+  
+  .btn-circle:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .btn-up {
+    background-color: #6ab0ff;
+    border-radius: 4px;
+    border-radius: 25px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    height: fit-content;
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 5px;
+    min-width: 50px;
+    margin: 3px;
+  }
+  .btn-up:hover{
+    background-color: #639fe4;
+  }
+  .btn-up span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-up span:after {
+    content: 'Update';
+    margin-top: 1px;
+    font-size: medium;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-up:hover span {
+    padding-right: 70px;
+  }
+  
+  .btn-up:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .btn-delete {
+    border-radius: 4px;
+    border-radius: 25px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    height: fit-content;
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 5px;
+    min-width: 50px;
+    margin: 3px;
+    background-color: #ff8137;
+  }
+  .btn-delete:hover{
+    background-color: #dd6f2f;
+  }
+  .btn-delete span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-delete span:after {
+    content: 'Hapus';
+    margin-top: 1px;
+    font-size: medium;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-delete:hover span {
+    padding-right: 60px;
+  }
+  
+  .btn-delete:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .btn-detail {
+    border-radius: 4px;
+    border-radius: 25px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    height: fit-content;
+    width: fit-content;
+    transition: all 0.5s;
+    padding: 5px;
+    min-width: 50px;
+    cursor: pointer;
+    margin: 3px;
+  }
+  
+  .btn-detail span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-detail span:after {
+    content: 'Detail';
+    margin-top: 1px;
+    font-size: medium;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-detail:hover span {
+    padding-right: 60px;
+  }
+  
+  .btn-detail:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.search__input {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #575756;
+    background-color: transparent;
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+        color: rgba(87, 87, 86, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+.search__input:hover,
+    .search__input:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+
+.btn-kat{
+    background-color: #63c132;
+    color: white;
+}
+.btn-secondary.focus, .btn-secondary:focus{
+    border-color: #358600;
+    background-color: #358600 !important;
+}
+.btn-kat:hover{
+    border: solid #63c132;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    color: #fff;
+    background-color: #358600;
+    border-color: #358600;
+}
+.btn-light.focus, .btn-light:focus{
+    color:  #358600;
+    background-color: #9ee37d;
+    border-color: #63c132;
+}
+.tag-popular button{
+    border-radius: 20px;
+    border: solid #9ee37d;
+    color:  #358600;
+}
+.tag-popular button:hover{
+    background-color: #63c132;
+    color: white;
+}
+.maincontent{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(212, 212, 212));
+    min-height: 150vh;
+}
+.part-name{
+    font-weight: normal;
+    color: #358600;
+    margin: 0;
+    font-size: 3vw;
+}
+.brand-name{
+    font-size: 5vw;
+    margin: 0;
+    color: #63c132;
+    font-weight: 800;
+}
+.navbar a{
+    color: #638153;
+}
+.display {
+    background-size: cover;
+    height: 100%;
+    background-position-x: center;
+    width: auto;
+    background-repeat: no-repeat;
+}
+.page-link{
+    color: #358600;
+}
+.med-name a{
+  font-size: larger;
+    font-weight: bolder;
+    color: #638153;
+}
+.med-name span{
+  color: #adb5bd;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+.table td, .table th{
+  padding:   .50rem;
+}
+@media only screen and (max-width: 600px) {
+    .maincontent{
+        height: 315vh;
+    }
+    .part-name{
+        font-size: 5vw;
+    }
+    .brand-name{
+        font-size: 7vw;
+    }
+    .btn-aksi{
+        display: grid;
+        place-items: center;
+    }
+    .aksi{
+        width: 132px !important;
+    }
+  }
+/* modal comfirm */
+.modal-confirm {		
+  color: #636363;
+  width: 400px;
+  margin: 30px auto;
+}
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+      text-align: center;
+  font-size: 14px;
+  align-items: center;
+}
+.modal-confirm .modal-header {
+  border-bottom: none;   
+      position: relative;
+}
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+      position: absolute;
+  top: -5px;
+  right: -2px;
+}
+.modal-confirm .modal-body {
+  color: #999;
+}
+.modal-confirm .modal-footer {
+  border: none;
+  text-align: center;		
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+  color: #999;
+}		
+.modal-confirm .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  z-index: 9;
+  text-align: center;
+  border: 3px solid #f15e5e;
+}
+.modal-confirm .icon-box i {
+  color: #f15e5e;
+  font-size: 46px;
+  display: inline-block;
+  margin-top: 13px;
+}
+  .modal-confirm .btn {
+      color: #fff;
+      border-radius: 4px;
+  background: #60c7c1;
+  text-decoration: none;
+  transition: all 0.4s;
+      line-height: normal;
+  min-width: 120px;
+      border: none;
+  min-height: 40px;
+  border-radius: 3px;
+  margin: 0 5px;
+  outline: none !important;
+  }
+.modal-confirm .btn-info {
+      background: #c1c1c1;
+  }
+  .modal-confirm .btn-info:hover, .modal-confirm .btn-info:focus {
+      background: #a8a8a8;
+  }
+  .modal-confirm .btn-danger {
+      background: #f15e5e;
+  }
+  .modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+      background: #ee3535;
+  }
